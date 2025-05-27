@@ -77,5 +77,86 @@
 </div>
   </div>
 </section>
+	
+<section class="review-section">
+  <h2> Reviews from former students</h2>
+<div class="slider">
+    <button class="nav-button prev">←</button>
+
+    <div class="slide active">
+      <img src="GPcontent/madsskovgaard.png" alt="Review 1">
+      <p class="reviewtext">"In addition to providing good knowledge and tools for my future in games, the game producer education has provided many opportunities to expand my netword. Both with guests during the coursee, and with my fellow students." 
+	<br>
+		 – Mads Skovgaard, CEO &amp; Founder of Fair Games</p>
+    </div>
+
+    <div class="slide">
+      <img src="GPcontent/helenasokol.png" alt="Review 2">
+      <p class="reviewtext">"The Producer courses at EA Dania gave me valuable insight into the multi-faceted role of a producer and helped me gain confidence in my own style of management and communication, which I utilize in my daily work as an Associate Producer at Game Swing. The lectures and guest speakers were well assembled and gave the students possibility for collaborations, which for me resulted in new friends and network."
+		<br>
+		- Helena Sokol, Assistant Producer at Game Swing
+		</p>
+    </div>
+
+    <div class="slide">
+      <img src="GPcontent/Kristoffer.png" alt="Review 3">
+      <p class="reviewtext">"The Game Producer education has given me a much stronger understanding of game production, both on a theoretical and pragmatical level. The education has certainly played an important role, in me landing my dream position in a bigger game project, and I use the toolset i've been learned through the education every day."
+		<br>
+		- Kristoffer Einsbohr Rasmussen, Project Lead at Kong Orange
+		</p>
+    </div>
+<div class="slide">
+      <img src="GPcontent/Lykke.png" alt="Review 4">
+      <p class="reviewtext">"The Game Producer course gave me the tools to make the career change from teaching game design, to working as a Creative Producer. I now get to combine my love of game design with project management, which gives me the opportunity to collaborate with some of the most creative people and compnies in the industry."
+		<br>
+		- Lykke Brandhøj Kristensen, Creative Producer at Vizlab Studios
+		</p>
+    </div>
+    <button class="nav-button next">→</button>
+  </div>
+</section>
+	
+	
+<script>
+  const slides = document.querySelectorAll('.slide'); // Henter elementer med klassen .slide - Mads
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+  let currentIndex = 0;
+  let autoSlideInterval; // Til den automatiske slide funktion - Mads
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active')); // Slides' har en given "display: none; værdi" så vi fjerner .active og tilføjer den til slidet som har det andgivene index - Mads
+    slides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length; // øger indexet (skifter slide) og resetter vores timer på 30sek når der skiftes, præcist omvendt forneden - Mads
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
+    showSlide(currentIndex);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval); // nulstilling af automatisk interval - Mads
+    autoSlideInterval = setInterval(nextSlide, 30000); // = 30sek
+  }
+// Event listeners der håndterer click funktionen på nextBtn (button) eller prevBtn - Mads
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  // Start automatisk slide når siden loader
+  showSlide(currentIndex);
+  autoSlideInterval = setInterval(nextSlide, 30000); // kører nextslide() hvert 30sek.
+</script>
 </body>
 </html>
