@@ -5,11 +5,25 @@
 }
 body, html {
   margin: 0;
-/*#0a0a0a*/
+
 min-height: 100vh;
 padding: 0;
 overflow-x: hidden;
 max-width: 100vw;
+}
+h1,
+h2 {
+  font-family: "pt-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem; 
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+p, span{
+	font-family: "pt-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 /* Topbaren/menuen*/
 .topbar {
@@ -98,4 +112,59 @@ text-decoration: underline;
   height: auto;
   display: block;
   border-radius: 8px;
+}
+/* anden sektion */
+.program-section {
+ padding-top: 60px; 
+  padding-bottom: 60px;
+  background-color: #111332; 
+}
+.content h1, h2 {
+  margin-top: 0;
+  margin-bottom: 20px; 
+	color: white;
+	text-align: center;
+}
+.content p{
+  margin-top: 0;
+  margin-bottom: 20px; 
+	color: white;
+	text-align: center;
+}
+.content iframe {
+  display: block;
+  margin: 0 auto;
+}
+.line {
+  width: 600px;
+  height: 2px;
+  background-color: #384971; /* rød */
+  margin: 30px auto 0; /* centrer og skub lidt ned */
+  
+}
+.featured-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.featured-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+/* spcifikt større størrelse på disse keywords <span> - mads */
+.featured-item span {
+  font-size: 1.1rem;
+  color: white;
+}
+.program-list {
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start; 
+  max-width: 600px;        
+  margin-left: auto;      
+  margin-right: auto;
 }
