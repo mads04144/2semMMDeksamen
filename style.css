@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*Universielle ting ift. position - Mads*/
+/*Universielle ting ift. position & font str. - Mads*/
 * {
   box-sizing: border-box;
 }
@@ -19,6 +19,14 @@ h2 {
   font-size: 2.5rem; 
   line-height: 1.2;
   margin-bottom: 20px;
+}
+h3{
+	font-family: "pt-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+font-size: 1.25rem; 
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 p, span{
 	font-family: "pt-sans", sans-serif;
