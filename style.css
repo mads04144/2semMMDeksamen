@@ -147,14 +147,16 @@ text-decoration: underline;
   width: 600px;
   height: 2px;
   background-color: #384971; 
-  margin: 30px auto 0; 
+  margin: 25px auto 0; 
+margin-bottom: 40px;
   
 }
 .linedarkblue {
   width: 600px;
   height: 2px;
   background-color: #111332; 
-  margin: 30px auto 0; 
+  margin: 25px auto 0; 
+	margin-bottom: 40px;
   
 }
 .featured-item {
@@ -296,6 +298,7 @@ overflow: hidden;
   left: 0;
   width: 100%;
   transition: opacity 0.2s ease, visibility 0.2s ease;
+	
 }
 .speaker-slide.active{
 	display: flex;
@@ -394,4 +397,59 @@ padding: 20px;
 	width: 100%;
 	
 	
+}
+
+/* Enrollment sektion - Mads*/
+.enrollment-section{
+	background-color: #EC7C0B;
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.enroll-container{
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+}
+.enrollment-form{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-row{
+	display: flex;
+	row-gap: 15px;
+	flex-direction: column;
+}
+.form-row input{
+	flex: 1;
+	min-width: 200px;
+}
+.enrollment-form input, .enrollment-form textarea{
+	padding: 12px;
+	border: 2px solid #111332;
+	border-radius: 6px;
+	width: 100%;
+	background-color: transparent;
+	box-sizing: border-box;
+	color: white;
+}
+.enrollment-form{
+	resize: vertical;
+}
+.enrollment-form button{
+	padding: 12px 20px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 6px;
+	transition: background-color 0.3s ease;
+}
+.enrollment-form button:hover{
+	background-color: black; /* have to change from black to -> #00000 cuz "black" is offensive */
+}
+.enrollment-form input::placeholder, .enrollment-form textarea::placeholder{
+	color:white;
+	opacity: 0.8;
 }
