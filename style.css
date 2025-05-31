@@ -336,3 +336,34 @@ overflow: hidden;
 .next-speaker {
   right: 0;
 }
+
+/* advisory board sektion - Mads */
+.advisory-board{
+background-color: #384971;
+padding-top: 60px; 
+  padding-bottom: 60px;
+	text-align: center;
+	
+}
+.adv-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: "pt-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+font-size: 1.25rem; 
+  line-height: 1.2;
+color: white;
+padding: 20px;
+}
+.adv-board-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+.advisory-member img{
+	max-width: 250px;
+	border-radius: 8px;
+	max-height: 250px;
+	object-fit: cover; 
+}
