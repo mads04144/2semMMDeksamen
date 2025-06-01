@@ -378,7 +378,7 @@
 </div>
 </section>
 
-<section class="section enrollment-section">
+<section class="section enrollment-section" id="enrollment">
 <div class="enroll-container">
 <h2>Enrollment Open Now!</h2>
 <h3 class="headeritalic">Enrollment is subject to a mandatory admission interview!</h3>
@@ -401,7 +401,7 @@
 <div class="find-us-columns">
 <!-- venstre kolonne: Conventions - Mads -->
 <div class="column">
-<h3 class="column-title">Conventions</h3>
+<h2>Conventions</h2>
 <div class="image-row">
 <a href="https://gdconf.com/" target="_blank">
 <img src="GPcontent/gdc.png" alt="convetion 1">
@@ -416,7 +416,7 @@
 </div>
 <!-- højre kolonne: Vores channels - Mads -->
 <div class="column">
-<h3 class="column-title">Channels</h3>
+<h2>Channels</h2>
 <div class="image-column">
 <a href="https://discord.gg/spnzay8S5D" target="_blank">
 <img src="GPcontent/discordd.png" alt="channel 1">
@@ -430,7 +430,13 @@
 </div>
 	
 </section>
-	
+<div class="popup" id="enrollmentPopup">
+<div class="popup-content">
+<button class="close-popup" onclick="closePopup()">x</button>
+<h2>ENROLLMENT OPEN NOW!</h2>
+<p><a href="#enrollment" class="popup-link">ENLIST HERE</a></p>
+</div>
+</div>
 <script>
   const slides = document.querySelectorAll('.slide'); // Henter elementer med klassen .slide - Mads
   const nextBtn = document.querySelector('.next');
@@ -514,6 +520,24 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', updateSpeakerWrapperHeight);
   window.addEventListener('resize', updateSpeakerWrapperHeight);
 });
+</script>
+
+<script>
+window.addEventListener('load', () =>{
+setTimeout(() => {
+      document.getElementById('enrollmentPopup').classList.add('show');
+    }, 2000);
+  });
+function closePopup(){
+	const popup = document.getElementById('enrollmentPopup');
+    popup.classList.remove('show');
+  }
+document.addEventListener('DOMContentLoaded', () => {
+    const link = document.querySelector('.popup-link');
+    link.addEventListener('click', () => {
+      closePopup();
+    });
+  });
 </script>
 </body>
 </html>
