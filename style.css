@@ -410,6 +410,16 @@ padding: 20px;
 	max-width: 600px;
 	text-align: center;
 	margin: 0 auto;
+
+}
+.headeritalic{
+color: white;
+font-style: italic;
+margin-bottom: 20px;
+text-align: center;
+}
+.headeritalic a{
+	color:#384971;
 }
 .enrollment-form{
 	display: flex;
@@ -445,11 +455,71 @@ padding: 20px;
 	cursor: pointer;
 	border-radius: 6px;
 	transition: background-color 0.3s ease;
+	border: 2px solid #111332;
+	
 }
 .enrollment-form button:hover{
-	background-color: black; /* have to change from black to -> #00000 cuz "black" is offensive */
+	background-color: #384971; 
 }
 .enrollment-form input::placeholder, .enrollment-form textarea::placeholder{
 	color:white;
 	opacity: 0.8;
+}
+/* fjernelse af den standard hvide outline når en "sektion" er i fokus - Mads */
+.enrollment-form input:focus, .enrollment-form textarea:focus, .enrollment-form button:focus{
+	outline: none;
+	border-color: #384971;
+	box-shadow: 0 0 0 2px rgba(52,73,113,0.5);
+}
+.find-us-section{
+	background-color: #384971;
+	padding: 60px 20px;
+	color: white;
+}
+.find-us-container{
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.find-us-columns{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.column{
+	flex: 1;
+	min-width: 300px;
+}
+.image-row{
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+}
+.image-row img{
+	width: 250px;
+	height: 100px;
+	border-radius: 6px;
+}
+.image-column{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
+.image-column img{
+	width: 100px;
+	height: 100px;
+	border-radius: 6px;
+}
+
+/* til hovers i denne sektion (find us) - Mads*/
+.find-us-section img{
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.find-us-section img:hover{
+	transform: scale(1.15);
 }
