@@ -654,3 +654,11 @@ align-self: center;
 .faq a:hover{
 	text-decoration: underline;
 }
+.featured-item a{
+	color: white;
+	display: inline-block;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+.featured-item a:hover{
+	transform: scale(1.1) translateY(-2px); 
+}
