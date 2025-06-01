@@ -78,7 +78,7 @@ p, span{
 .left-menu a:hover {
   color: #111332;
   transform: scale(1.1) translateY(-2px); 
-  text-shadow: 0 2px 6px rgba(224, 110, 37, 0.4); 
+
 text-decoration: underline;
 }
 
@@ -571,4 +571,86 @@ text-align: center;
 }
 .popup-link:hover{
 	color: #111332;
+}
+
+/* F.A.Q side*/
+
+.faq {
+  min-height: 100vh;
+  background-image: url("GPcontent/backgroundpicture.png");
+  background-size: cover;
+  background-position: right center;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.faq h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.faq p,
+.faq ul{
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  font-family: "pt-sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+}
+.faq ul{
+  list-style-position: outside;
+  padding-left: 0;      
+  text-indent: 0;        
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
+}
+
+.faq h3 {
+  color: white;
+  font-size: 1.7rem;
+align-self: center;
+}
+.faq-image-row{
+	display: flex;
+	gap: 200px;
+	justify-content: center;
+	margin-top: 20px;
+}
+.image-item img{
+	width: 200px;
+	height: auto;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.image-item img:hover{
+	transform: scale(1.1);
+}
+.image-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 250px;
+	color: white;
+	text-decoration: none;
+}
+.image-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+.faq a{
+	color: white;
+	text-decoration: none;
+}
+.faq a:hover{
+	text-decoration: underline;
 }
