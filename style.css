@@ -73,13 +73,16 @@ p, span{
   transition: all 0.25s ease;
   position: relative;
   display: inline-block;
+font-size: 2rem; 
+}
+.left-menu a.active{
+	color: #EC7C0B;
+	text-decoration: underline;
 }
 
 .left-menu a:hover {
   color: #111332;
   transform: scale(1.1) translateY(-2px); 
-
-text-decoration: underline;
 }
 
 .topbarlogo img, .logo-img {
@@ -87,6 +90,7 @@ text-decoration: underline;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
+
 /* Introduktionssektionen */
 .introduction-section {
   padding-top: 60px; 
@@ -498,8 +502,8 @@ text-align: center;
 	justify-content: center;
 }
 .image-row img{
-	width: 250px;
-	height: 100px;
+	width: 200px;
+	height: auto;
 	border-radius: 6px;
 }
 .image-column{
