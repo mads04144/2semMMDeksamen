@@ -139,6 +139,43 @@ font-size: 2rem;
   .left-menu {
     display: none;
   }
+	 .speaker-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker {
+    display: none;
+  }
+	.speaker:first-child {
+    display: block;
+  }
+
+  .speaker-slider {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .speaker-wrapper {
+    min-height: auto;
+    height: auto;
+  }
+
+  .speaker-nav {
+    font-size: 2rem;
+    padding: 10px;
+    top: auto;
+    bottom: 10px;
+    transform: none;
+  }
+
+  .prev-speaker {
+    left: 10px;
+  }
+
+  .next-speaker {
+    right: 10px;
+  }
 }
 /* Introduktionssektionen */
 .introduction-section {
